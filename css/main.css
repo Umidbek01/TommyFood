@@ -1,3 +1,22 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v12-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/inter-v12-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}  
+
 /* ROOT */
 :root{
     /* --header-bg-color: #fff; */
@@ -27,7 +46,7 @@ body{
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: "Inter", "Arial", sans-serif;
     font-weight: 400;
     background-color: #fff;
 }
@@ -69,4 +88,35 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+.statics__info{
+    width: 505px;
+    margin-bottom: 83px;
+}
+
+.statics__title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 36px;          
+    line-height: 48px;
+    color: #3C3C3C;
+}
+
+.statics__desc{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #667085;
+}
+.statics__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/line1.png"), url("../assets/images/line2.png");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain contain;
+    background-position: calc(50% - 400px), calc(50% + 400px);
 }
